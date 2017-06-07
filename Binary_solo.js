@@ -16,9 +16,9 @@ const irc = require('irc');
 var irc_config = {
 	channels:['#channel_name'],
 	server:'server ip',
-	botName:'Satania',
-	username:'Satania',
-	nick:'Satania'
+	botName:'Binary_solo',
+	username:'Binary_solo',
+	nick:'Binary_solo'
 }
 
 var irc_bot = new irc.Client(irc_config.server,irc_config.botName,{
