@@ -1,4 +1,4 @@
-# Satania-bot
+# Binary_solo-bot
 
 A discord bot for linking an irc channel and a Discord channel.
 
