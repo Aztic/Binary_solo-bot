@@ -42,11 +42,9 @@ client.on('ready', ()=>{
 //Read discord message
 //Need to optimize this
 client.on('message',msg=>{
-	if(msg.author.username === client.user.username) return;
-	if(!client_config.channel && msg.content != '!set' && msg.author.id != MY_ID){
+	if(msg.author.username === client.user.username || (!client_config.channel && msg.content != '!set' && msg.author.id != MY_ID))
 		return;
-	} 
-	else if(msg.author.id === MY_ID && msg.content === "!set"){
+	if(msg.author.id === MY_ID && msg.content === "!set"){
 		client_config.channel = msg.channel;
 		console.log("Done at {0}".format(msg.channel.name,msg.server.name));
 	}
