@@ -35,7 +35,7 @@ var client_config = {
 };
 
 client.on('ready', ()=>{
-	console.log("Logged in as Satania");
+	console.log("Logged in as Satania"); //This was the previous name. Satania best waifu
 	client.user.setGame("IRC");
 });
 
